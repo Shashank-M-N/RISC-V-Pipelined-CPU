@@ -1,0 +1,7 @@
+/db
+/incremental_db
+/simulation
+*.done
+*.rpt
+*.smsg
+*.summary
