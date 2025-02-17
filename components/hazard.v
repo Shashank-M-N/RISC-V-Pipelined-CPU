@@ -1,7 +1,6 @@
 // hazard.v - Hazard detection unit for RISC-V pipeline
 
 module hazard (
-    input       clk,
     input [4:0] Rs1D, Rs2D, Rs1E, Rs2E, RdE, RdM, RdW,
     input       ResultSrcER0, RegWriteM, RegWriteW, PCSrcE,
     output reg  StallF, StallD, FlushE, FlushD,

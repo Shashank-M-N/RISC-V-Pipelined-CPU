@@ -82,7 +82,7 @@ pl_reg_mw      plmw(clk, RegWriteM, ResultSrcM, ALUResultM, ReadData, PCPlus4M, 
 mux4 #(32)     resultmux(ALUResultW, ReadDataW, PCPlus4W, lAuiPCW, ResultSrcW, ResultW);
 
 // hazard unit
-hazard         hazardunit(clk, InstrD[19:15], InstrD[24:20], Rs1E, Rs2E, RdE, RdM, RdW, ResultSrcE[0], RegWriteM, RegWriteW, PCSrcE,
+hazard         hazardunit(InstrD[19:15], InstrD[24:20], Rs1E, Rs2E, RdE, RdM, RdW, ResultSrcE[0], RegWriteM, RegWriteW, PCSrcE,
                           StallF, StallD, FlushE, FlushD, ForwardAE, ForwardBE);
 
 assign Mem_WrData = WriteDataM;
