@@ -40,6 +40,31 @@ All the above instructions are fully implemented and tested.
 
 ---
 
+### Installation and Setup Instructions
+
+#### Prerequisites
+Before running the project, ensure you have the following installed and configured:
+
+1. **Quartus Prime** – Download and install **Intel Quartus Prime** (Lite, Standard, or Pro)
+2. **ModelSim** – Install **ModelSim Intel FPGA Starter Edition** or **ModelSim SE** for simulation.
+3. **Configuration** – Ensure that Quartus and ModelSim are correctly configured in your system environment.
+
+#### Cloning the Repository
+Once the tools are installed, follow these steps to get started:
+
+1. Clone the repository using Git:
+   ```bash
+   git clone https://github.com/Shashank-M-N/RISC-V-Pipelined-CPU.git
+   cd RISC-V-Pipelined-CPU
+   ```
+2. Open Quartus and **load the project file (`.qpf`)**.
+
+#### Running the Project
+- Compile the design in Quartus.
+- Run simulations in ModelSim to verify functionality.
+
+---
+
 ## Module Description
 
 The top-level module has the following inputs and outputs:
